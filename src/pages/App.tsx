@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Viewer from './viewer'
 import Home from './home/'
-import Gallery from './gallery'
+import GalleryView from './gallery'
 
 const AppWrapper = styled.div`
     display: flex;
@@ -45,7 +45,7 @@ export default function App() {
                 <Switch>
                     <Route exact strict path="/" component={Home} />
                     <Route exact strict path="/viewer" component={Viewer} />
-                    <Route exact strict path="/gallery" component={Gallery} />
+                    <Route exact strict path="/gallery" component={GalleryView} />
                 </Switch>
             </BodyWrapper>
         </Suspense>

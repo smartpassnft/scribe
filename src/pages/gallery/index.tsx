@@ -1,5 +1,7 @@
 // import React, { useReducer, useEffect } from 'react';
-import React from 'react';
+import React from 'react'
+import { render } from 'react-dom'
+import Gallery from 'react-grid-gallery'
 import styled from 'styled-components'
 
 import { AutoColumn } from '../../components/Column'
@@ -10,10 +12,22 @@ const PageWrapper = styled(AutoColumn)`
   width: 100%;
 `
 
-export default function Gallery() {
+/*
+  TODO: Create scroll object that dynamically populates image elements
+  - Leverage this libary for the view
+  https://github.com/benhowell/react-grid-gallery
+  - May need to pull scrolls from chain storage
+*/
+const scrolls = [{
+
+}]
+
+export default function GalleryView() {
     return( 
         <PageWrapper>
-
+          render(
+            <Gallery images={scrolls} />
+          )
         </PageWrapper>
     )
 }
