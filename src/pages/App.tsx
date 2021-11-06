@@ -7,6 +7,8 @@ import Viewer from './viewer'
 import Home from './home/'
 import GalleryView from './gallery'
 
+import '../common.css'
+
 const AppWrapper = styled.div`
     display: flex;
     flex-flow: column;
