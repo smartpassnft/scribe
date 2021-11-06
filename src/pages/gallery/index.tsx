@@ -1,7 +1,7 @@
 // import React, { useReducer, useEffect } from 'react';
 import React from 'react'
 import { render } from 'react-dom'
-import Gallery from 'react-grid-gallery'
+// import Gallery from 'react-grid-gallery'
 import styled from 'styled-components'
 
 import { AutoColumn } from '../../components/Column'
@@ -26,7 +26,7 @@ export default function GalleryView() {
     return( 
         <PageWrapper>
           render(
-            <Gallery images={scrolls} />
+
           )
         </PageWrapper>
     )

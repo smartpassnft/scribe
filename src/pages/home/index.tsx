@@ -11,7 +11,9 @@ const PageWrapper = styled(AutoColumn)`
 export default function Home() {
     return( 
         <PageWrapper>
-
+          <AutoColumn> 
+            
+          </AutoColumn>
         </PageWrapper>
     )
 }
