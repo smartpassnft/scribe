@@ -2,12 +2,15 @@ import React, { Suspense } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 
-import Sidebar from '../components/Sidebar'
-import Viewer from './viewer'
-import Home from './home/'
-import GalleryView from './gallery'
+import Sidebar from '../components/Sidebar/'
+import Mint from './mint'
+import Market from './market'
+import Studio from './studio'
+import Collection from './collection'
+
 
 import '../common.css'
+import { Button } from '@theme-ui/components'
 
 const AppWrapper = styled.div`
     display: flex;
@@ -46,9 +49,21 @@ export default function App() {
                 </SidebarWrapper>
                 <BodyWrapper>
                     <Switch>
-                      <Route exact strict path="/" component={Home} />
-                      <Route exact strict path="/viewer" component={Viewer} />
-                      <Route exact strict path="/gallery" component={GalleryView} />
+                      <Route exact strict path="/" component={Mint} />
+                      <Route exact strict path="/market" component={Market} />
+                      <Route exact strict path="/studio" component={Studio} />
+                      <Route exact strict path="/collection" component={Collection} />
+                      <div className="metamask">
+                        <Button variant="secondary">
+                            <img src="/images/metamask.svg" alt="MetaMask" width="50"/>
+                        </Button>
+                        <div className="mt-2 mb-2">
+                            Connected Account:    
+                        </div>
+                        <Button variant="danger">
+                            Disconnect MetaMask
+                        </Button>
+                      </div>
                     </Switch>
                 </BodyWrapper>
             </AppWrapper>

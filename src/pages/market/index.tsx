@@ -9,7 +9,7 @@ const PageWrapper = styled(AutoColumn)`
    width: 100%;
  `
 
-export default function Viewer() {
+export default function Market() {
     return (
         <PageWrapper>
 
