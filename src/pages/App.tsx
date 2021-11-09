@@ -25,14 +25,11 @@ const SidebarWrapper = styled.div`
 `
 
 const BodyWrapper = styled.div`
-  display: inline;
-  width: 40%;
-  padding-top: 100px;
-  padding-left: 50px;
+  display: flex;
+  width: 60%;
   align-items: center;
+  justify-content: center;
   flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
   z-index: 10;
   z-index: 1;
 `
@@ -53,6 +50,5 @@ export default function App() {
                 </BodyWrapper>
             </AppWrapper>
         </Suspense>
-
     )
 }
