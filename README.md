@@ -7,9 +7,5 @@ Creative Writing experiment producing Fractionalized NFT
 
 ## Repositories
 - [contracts](https://github.com/smartpassnft/scribe-contracts) -- 
-- [chainlink adapters](https://github.com/smartpassnft/external-adapters-js)
-  - [scowldb](https://github.com/fuzzylemma/scowldb) -- api for external adapter to interact with
-- [custodian](https://github.com/smartpassnft/custodian)  -- chainlink fakeeper
-
-
-
+- [scowl adapters](https://github.com/smartpassnft/scowl-adapter)
+  - [scowldb api](https://github.com/fuzzylemma/scowldb) -- api for external adapter to interact with
