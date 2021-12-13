@@ -1,0 +1,9 @@
+name: testing
+on: [push]
+jobs:
+  example:
+    runs-on: self-hosted
+    steps:
+      - name: print env
+        run: env
+        shell: bash
