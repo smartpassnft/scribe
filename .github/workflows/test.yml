@@ -8,6 +8,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: print env
+      - name: env
         run: env 
         shell: bash
