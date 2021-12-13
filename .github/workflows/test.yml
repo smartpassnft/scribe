@@ -1,7 +1,7 @@
 name: testing
 on: [push]
 jobs:
-  example:
+  ecs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
