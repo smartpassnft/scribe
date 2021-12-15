@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '@theme-ui/components'
 import { useHistory } from 'react-router'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
@@ -69,7 +70,7 @@ const StyledNavLink = styled(NavLink)`
 */
 
 
-
+// TODO: Dynamically render based on metamask state
 export default function Sidebar() {
   const history = useHistory()
   const { t } = useTranslation()
@@ -82,14 +83,30 @@ export default function Sidebar() {
       <SidebarRow>
         <SidebarNavLinks>
           <StyledNavLink id={`swap-nav-link`} to={'/'}>
-          {t('home')}
+          {t('Mint')}
           </StyledNavLink>
-          <StyledNavLink id={`swap-nav-link`} to={'/gallery'}>
-          {t('gallery')}
+          <StyledNavLink id={`swap-nav-link`} to={'/market'}>
+          {t('Market')}
           </StyledNavLink>
-          <StyledNavLink id={`swap-nav-link`} to={'/docs'}>
-          {t('docs')}
+          <StyledNavLink id={`swap-nav-link`} to={'/studio'}>
+          {t('Studio')}
           </StyledNavLink>
+          <StyledNavLink id={`swap-nav-link`} to={'/collection'}>
+          {t('Collection')}
+          </StyledNavLink>
+
+          <br /> <br /> <br />
+        
+          <StyledNavLink id={"connect"} to={''}>
+           {t('Connect')}
+          </StyledNavLink>
+          <StyledNavLink id="connected-account" to={''}>
+           {t('Connected Account')}
+          </StyledNavLink>
+          <StyledNavLink id="disconnect" to={''}>
+           {t('Disconnect')}
+          </StyledNavLink>
+
         </SidebarNavLinks>
       </SidebarRow>
 
